@@ -76,7 +76,7 @@ public class Mather_Lab4 implements ItemListener {
         JButton[] button = new JButton[state.length];
         for ( int i =0; i < state.length; i++ ) {
            card[i] = new JPanel();
-           String url = "https://github.com/CivilServiceUSA/us-states/tree/master/images/flags/" + state[i] + "-large.png";
+           String url = "https://raw.githubusercontent.com/CivilServiceUSA/us-states/master/images/flags/" + state[i] + "-large.png";
            button[i] = new JButton(new ImageIcon(new URL(url)));
            card[i].add(button[i]);
            cards.add(card[i], state[i]);
